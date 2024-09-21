@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<h2>MENU</h2>
+		<link rel="stylesheet" th:href="@{/CSS/men.css}">
+	</head>
+	<body>
+		<h3><a th:href="@{'/add'}"></a></h3>
+		<table>
+		           <thead>
+		               <tr>
+		                   <th scope="col">S.NO</th>
+		                   <th scope="col">Food Name</th>
+		                   <th scope="col">Price</th>
+						   <th scope="col">Delete</th>
+						   	<th scope="col">Edit</th>
+						 
+		               </tr>
+		           </thead>
+				   <tbody>
+					<tr th:each="s:${stu}">
+						<td th:text="${s.id}"></td>
+						<td th:text="${s.addfoodname}"></td>
+						<td th:text="${s.price}"></td>
+						<td><a class="btn btn-secondary btn -sm" th:href="@{/deletefood/{id}(id=${s.id})}">Delete</a></td>
+						<td><a class="btn btn-secondary btn -sm" th:href="@{/editfood/{id}(id=${s.id})}">Edit</a></td>
+					</tr>
+				   </tbody>
+		           
+	</body>
+	
+</html>

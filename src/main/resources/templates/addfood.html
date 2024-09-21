@@ -1,0 +1,33 @@
+
+<!Doctype html>
+<html>
+        <head>
+			<link rel="stylesheet" th:href="@{/CSS/add.css}">
+          
+                   </head>
+        <body>
+        <div class="H3">
+        
+        </div>
+        <h1>ADD NEW FOOD</h1>
+        <div class="container">
+            <img src="img/add food.jpg" width="200"height="100">
+      
+        <form th:action="@{/save}" method="post">
+            <div class="input">
+                <label> Enter Food name:
+                </label>
+                <input type="text" name="addfoodname"  >
+</div>
+            <div class="input">
+                <label for="price"> Enter Price</label>
+                <input type="text" name="price" >
+            </div>
+            
+        <button type="submit" name="save">submit</button>
+        <button type="reset">reset</button>
+        </form>
+        </div>
+
+    </body>
+</html>

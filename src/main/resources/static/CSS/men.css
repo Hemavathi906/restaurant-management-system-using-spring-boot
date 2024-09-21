@@ -1,0 +1,10 @@
+ody{
+    text-align: center;
+}
+td,th{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: antiquewhite;
+    margin: 5px;
+    text-align: center;
+}
